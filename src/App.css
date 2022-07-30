@@ -2,16 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +18,135 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.circle {
+  margin: 25px 10px;
+  width: 200px;
+  color: #fff;
+  font-size: 32px;
+  line-height: 200px;
+  text-align: center;
+  height: 200px;
+  border-radius: 100px;
+}
+.bg-yellow {
+  background: #ffcc35;
+}
+.bg-green {
+  background: #5bd5a0;
+}
+.bg-red {
+  background: #eb3980;
+}
+.bg-sky{
+  background-color: skyblue!important;
+}
+
+
+.vvideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.videoquater {
+  
+}
+
+.video {
+  object-fit: cover;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.main_body {
+  padding: 0 1.5rem;
+  width: fit-content !important;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.25rem;
+  background-color: rgba(0, 0, 0, 0.411);
+  position: relative;
+}
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  background: rgba(234, 236, 239, 0.81);
+  width: 100%;
+  font-size: 2.0rem;
+  font-style: oblique;
+  font-weight: 600;
+  padding: 0.5rem;
+  border: none;
+  height: 3rem;
+  color: rgb(3, 3, 3);
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+#lead-down {
+  position: relative;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  bottom: 0.2rem;
+  color: rgb(243, 234, 234);
+}
+
+.playbutton {
+  cursor: pointer;
+  right:0rem;
+  position: absolute;
+  background: #2c2c2ce6;
+    border-radius: 50%;
+    padding: 0.7rem 0.6rem 0.7rem 0.7rem;
+}
+
+.spanofarrow {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+
+
+.down {
+  border-radius: 50%; 
+  background: rgba(15, 15, 15, 0.973); 
+  padding: 0.5rem;
+  animation: pulsate 0.70s ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulsate {
+  0% {
+      transform: scale(1, 1);
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+      transform: scale(1.1, 1.1);
+  }
+
+  100% {
+      transform: scale(1, 1);
   }
 }
+
