@@ -3,7 +3,7 @@ import React from "react";
 import logo from "./img.png";
 import './css/AboutMe.css';
 const AboutMe = ({ heading, message, link, imgSize, resume }) => {
-
+//hey this is me
   return (
     <div id="aboutme" className="jumbotron jumbotron-fluid m-0" style={{position:"relative", background:"white", padding:"6rem 0 4rem 0"}}>
       <div className="container container-fluid">

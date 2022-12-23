@@ -5,7 +5,7 @@ import './css/Education.css';
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const Education = () => {
-
+//this is mee too.
     return (
       <div id="education" className="jumbotron jumbotron-fluid m-0" style={{position:"relative", background:"rgb(178 184 194)", padding:"2rem 0 2rem 0"}}>
 
